@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-import todosRoutes from './todos.route';
+import todoRouter from './todo.router';
 
 const router = Router();
 
-router.use('/todos', todosRoutes);
+router.use('/todos', todoRouter);
 
 export default router;

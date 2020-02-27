@@ -3,7 +3,7 @@ import * as express from 'express';
 import * as mongoose from 'mongoose';
 import * as dotenv from 'dotenv';
 
-import apiRoutes from './src/routes/api.route';
+import apiRouter from './src/routers/api.router';
 
 dotenv.config();
 
@@ -28,7 +28,7 @@ db.once(
 
 const app = express();
 
-app.use('/api', apiRoutes);
+app.use('/api', apiRouter);
 
 app.listen(
   process.env.PORT,

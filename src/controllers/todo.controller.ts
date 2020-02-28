@@ -9,7 +9,7 @@ const todoController = {
   create: (req: Request, res: Response) => {
     const { text, done } = req.body;
 
-    const createdTodo = new Todo(uuidv4, text, done);
+    const createdTodo = new Todo(uuidv4(), text, done);
 
     todos.push(createdTodo);
 

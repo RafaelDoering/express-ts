@@ -21,6 +21,8 @@
   "rules": {
     "no-console": "off",
     "no-unused-vars": "off",
+    "lines-between-class-members": "off",
+    "arrow-body-style": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

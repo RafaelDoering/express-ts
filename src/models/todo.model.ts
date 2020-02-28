@@ -1,10 +1,13 @@
-import { Schema, model } from 'mongoose';
+class Todo {
+  id: string;
+  text: string;
+  done: boolean;
 
-const todoSchema = new Schema({
-  text: String,
-  done: Boolean,
-});
-
-const Todo = model('Todo', todoSchema);
+  constructor(id: string, text: string, done: boolean) {
+    this.id = id;
+    this.text = text;
+    this.done = done;
+  }
+}
 
 export default Todo;
